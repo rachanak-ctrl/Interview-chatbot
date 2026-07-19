@@ -33,7 +33,7 @@ if "messages" not in st.session_state:
     # Let the AI kick off the conversation with a welcoming question
     try:
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3.5-flash',
             contents="Introduce yourself briefly as the interviewer and ask the first classic interview question.",
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION
